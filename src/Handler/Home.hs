@@ -11,4 +11,17 @@ import Import
 import Database.Persist.Postgresql
 
 getHomeR :: Handler Html
-getHomeR = undefined
+getHomeR = do 
+    sess <- lookupSession "_NOME"
+    defaultLayout $ do 
+        -- addScriptRemote "url" -> CHAMA JS EXTERNO
+        -- addScript (StaticR script_js), ONDE script 
+        -- eh o nome do seu script.
+        -- pasta css, arquivo: bootstrap.css
+        addStylesheet (StaticR css_bootstrap_css)
+        
+        toWidgetHead [julius|
+            function ola(){
+                alert("ola");
+            }
+        |]
