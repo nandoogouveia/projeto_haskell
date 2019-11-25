@@ -25,13 +25,4 @@ getHomeR = do
                 alert("ola");
             }
         |]
-         toWidgetHead [lucius|
-            h1 {
-                color : red;
-            }
-        |]
-        [whamlet|
-            <h1>
-                OLA MUNDO!
-                
-        |]        
+           
