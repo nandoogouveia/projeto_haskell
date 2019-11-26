@@ -26,6 +26,10 @@ getHomeR = do
             }
         |]
         [whamlet|
-            <h1>
-                IAEw!
+            <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="#">
         |]   
