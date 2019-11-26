@@ -25,4 +25,7 @@ getHomeR = do
                 alert("ola");
             }
         |]
-           
+        [whamlet|
+            <h1>
+                IAEw!
+        |]   
