@@ -8,6 +8,8 @@ module Handler.Home where
 
 import Import
 import Data.FileEmbed (embedFile)
+import Text.Lucius
+import Text.Julius
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
