@@ -10,6 +10,11 @@ import Import
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
+getAdsR :: Handler TypedContent
+getAdsR = return $ TypedContent "text/plain"
+    $ toContent $(embedFile "static/ads.txt")
+
+
 getHomeR :: Handler Html
 getHomeR = do 
     sess <- lookupSession "_NOME"
