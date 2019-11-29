@@ -52,6 +52,7 @@ getHomeR = do
         
         
         
-            <h1>
-                IAEw!
+        <div class="body-wrap">
+            <header class="site-header">
+                <div class="container">
         |]    
