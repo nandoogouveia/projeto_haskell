@@ -60,8 +60,8 @@ postPalestraR = do
             redirect PalestraR
         _ -> redirect HomeR
 
-getCoachR :: TemaId -> Handler Html
-getCoachR temaid = do 
+getCoachesR :: TemaId -> Handler Html
+getCoachesR temaid = do 
     let sql = "SELECT ??,??,?? FROM tema \
           \ INNER JOIN palestra ON palestra.temaid = tema.id \
           \ INNER JOIN coach ON palestra.coachid = coach.id \
@@ -71,7 +71,7 @@ getCoachR temaid = do
     defaultLayout $ do 
         [whamlet|
             <h1>
-                COACHS DE #{temaNome tema}
+                COACHES DE #{temaNome tema}
             <ul>
                 $forall (Entity _ _, Entity _ _, Entity _ coach) <- coachs
                     <li>
