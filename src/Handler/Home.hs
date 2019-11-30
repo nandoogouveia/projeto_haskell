@@ -8,8 +8,8 @@ module Handler.Home where
 
 import Import
 import Data.FileEmbed (embedFile)
-import Text.Lucius
-import Text.Julius
+--import Text.Lucius
+--import Text.Julius
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
@@ -28,11 +28,7 @@ getHomeR = do
         -- pasta css, arquivo: bootstrap.css
         addStylesheet (StaticR css_bootstrap_css)
         
-        toWidgetHead [julius|
-            function ola(){
-                alert("ola");
-            }
-        |]
+        
         [whamlet|
         
         <div id="48248-6">
