@@ -12,12 +12,12 @@ import Database.Persist.Sql (ConnectionPool, runSqlPool)
 import Yesod.Core.Types     (Logger)
 
 data App = App
-{ appSettings    :: AppSettings
-, appStatic      :: Static 
-, appConnPool    :: ConnectionPool 
-, appHttpManager :: Manager
-, appLogger      :: Logger
-}
+    { appSettings    :: AppSettings
+    , appStatic      :: Static 
+    , appConnPool    :: ConnectionPool 
+    , appHttpManager :: Manager
+    , appLogger      :: Logger
+    }
 
 mkYesodData "App" $(parseRoutesFile "config/routes")
 
