@@ -16,7 +16,7 @@ import Database.Persist.Postgresql
 formTema :: Form Tema 
 formTema = renderBootstrap $ Tema
     <$> areq textField "Nome: " Nothing
-    <*> areq intField  "Dia: " Nothing
+  --<*> areq intField  "Dia: " Nothing
     <*> areq textField "Descrição: " Nothing
 
 getTemaR :: Handler Html
@@ -45,7 +45,7 @@ postTemaR = do
             runDB $ insert tema 
             setMessage [shamlet|
                 <div>
-                    TEMA DA PALESTRA INCLUIDO
+                    TEMA DA PALESTRA INCLUIDO COM SUCESSO
             |]
             redirect TemaR
         _ -> redirect HomeR
