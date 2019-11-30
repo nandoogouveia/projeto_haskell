@@ -14,8 +14,3 @@ Usuario
     
     
 
-Comment json -- Adding "json" causes ToJSON and FromJSON instances to be derived.
-
-
-
- -- By default this file is used in Model.hs (which is imported by Foundation.hs)
