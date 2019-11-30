@@ -16,4 +16,4 @@
 /tema     TemaR     GET POST
 
 /palestra         PalestraR  GET POST
-/elenco/#TemaId   ElencoR    GET     
+/elenco/#TemaId   ElencoR    GET
