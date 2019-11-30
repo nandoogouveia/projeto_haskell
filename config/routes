@@ -16,4 +16,4 @@
 /tema     TemaR     GET POST
 
 /palestra         PalestraR  GET POST
-/coaches/#TemaId  CoachesR   GET     
+/elenco/#TemaId   ElencoR    GET     
