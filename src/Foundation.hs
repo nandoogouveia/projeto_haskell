@@ -12,26 +12,26 @@ import Database.Persist.Sql (ConnectionPool, runSqlPool)
 import Yesod.Core.Types     (Logger)
 
 data App = App
-    { appSettings    :: AppSettings
-    , appStatic      :: Static 
-    , appConnPool    :: ConnectionPool 
-    , appHttpManager :: Manager
-    , appLogger      :: Logger
-    }
+{ appSettings    :: AppSettings
+, appStatic      :: Static 
+, appConnPool    :: ConnectionPool 
+, appHttpManager :: Manager
+, appLogger      :: Logger
+}
 
 mkYesodData "App" $(parseRoutesFile "config/routes")
 
 instance Yesod App where
-    makeLogger = return . appLogger
+makeLogger = return . appLogger
 
 authRoute _ = Just EntrarR
     
-    isAuthorized HomeR _ = return Authorized
-    isAuthorized EntrarR _ = return Authorized
-    isAuthorized UsuarioR _ = return Authorized 
-    isAuthorized (StaticR _) _ = return Authorized
-    isAuthorized AdminR _ = isAdmin
-    isAuthorized _ _ = isUsuario
+isAuthorized HomeR _ = return Authorized
+isAuthorized EntrarR _ = return Authorized
+isAuthorized UsuarioR _ = return Authorized 
+isAuthorized (StaticR _) _ = return Authorized
+isAuthorized AdminR _ = isAdmin
+isAuthorized _ _ = isUsuario
 
 isAdmin :: Handler AuthResult
 isAdmin = do 
