@@ -55,8 +55,8 @@ type Form a = Html -> MForm Handler (FormResult a, Widget)
 instance YesodPersist App where
     type YesodPersistBackend App = SqlBackend
     runDB action = do
-    master <- getYesod
-    runSqlPool action $ appConnPool master
+        master <- getYesod
+        runSqlPool action $ appConnPool master
 
 instance RenderMessage App FormMessage where
     renderMessage _ _ = defaultFormMessage
