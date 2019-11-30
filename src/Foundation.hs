@@ -37,9 +37,9 @@ isAdmin :: Handler AuthResult
 isAdmin = do 
     sess <- lookupSession "_NOME"
     case sess of 
-    Nothing -> return AuthenticationRequired
-    Just "admin" -> return Authorized
-    Just _ -> return $ Unauthorized "VC EH USUARIO COMUM"
+Nothing -> return AuthenticationRequired
+Just "admin" -> return Authorized
+Just _ -> return $ Unauthorized "VC EH USUARIO COMUM"
 
 isUsuario :: Handler AuthResult
 isUsuario = do 
