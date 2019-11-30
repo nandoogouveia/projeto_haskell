@@ -45,8 +45,8 @@ isUsuario :: Handler AuthResult
 isUsuario = do 
     sess <- lookupSession "_NOME"
     case sess of 
-    Nothing -> return AuthenticationRequired
-    Just _ -> return Authorized
+        Nothing -> return AuthenticationRequired
+        Just _ -> return Authorized
 
 type Form a = Html -> MForm Handler (FormResult a, Widget)
 
