@@ -22,7 +22,7 @@ data App = App
 mkYesodData "App" $(parseRoutesFile "config/routes")
 
 instance Yesod App where
-    makeLogger = return . appLogger
+        makeLogger = return . appLogger
 
 authRoute _ = Just EntrarR
     
