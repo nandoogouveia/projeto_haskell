@@ -9,7 +9,24 @@ Usuario
     deriving Show
     
     
+Coach    
+    nome Text
+    dia Day
+    deriving Show
     
+Palestra
+    temaid  TemaId
+    coachid CoachId
+    dia     Int
+    
+Tema
+    nome Text
+    dia  Int
+    descricao Text
+    deriving Show
+    
+    
+
     
     
     

@@ -10,3 +10,7 @@
 /entrar    EntrarR  GET POST
 /sair      SairR    POST
 /admin     AdminR   GET
+
+/coach    CoachR GET POST
+/tema     TemaR GET POST
+/palestra PalestraR GET POST
