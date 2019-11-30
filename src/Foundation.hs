@@ -37,16 +37,16 @@ isAdmin :: Handler AuthResult
 isAdmin = do 
     sess <- lookupSession "_NOME"
     case sess of 
-        Nothing -> return AuthenticationRequired
-        Just "admin" -> return Authorized
-        Just _ -> return $ Unauthorized "VC EH USUARIO COMUM"
+    Nothing -> return AuthenticationRequired
+    Just "admin" -> return Authorized
+    Just _ -> return $ Unauthorized "VC EH USUARIO COMUM"
 
 isUsuario :: Handler AuthResult
 isUsuario = do 
     sess <- lookupSession "_NOME"
     case sess of 
-        Nothing -> return AuthenticationRequired
-        Just _ -> return Authorized
+    Nothing -> return AuthenticationRequired
+    Just _ -> return Authorized
 
 type Form a = Html -> MForm Handler (FormResult a, Widget)
 
@@ -55,8 +55,8 @@ type Form a = Html -> MForm Handler (FormResult a, Widget)
 instance YesodPersist App where
     type YesodPersistBackend App = SqlBackend
     runDB action = do
-        master <- getYesod
-        runSqlPool action $ appConnPool master
+    master <- getYesod
+    runSqlPool action $ appConnPool master
 
 instance RenderMessage App FormMessage where
     renderMessage _ _ = defaultFormMessage
