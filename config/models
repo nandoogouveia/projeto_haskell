@@ -21,9 +21,9 @@ Palestra
     
 Tema
     nome Text
+    dia  Day
     descricao Text
     deriving Show
-    
     
     
 
