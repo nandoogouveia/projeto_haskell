@@ -22,7 +22,6 @@ import Database.Persist.Postgresql          (createPostgresqlPool, pgConnStr,
                                              pgPoolSize, runSqlPool)
 import Import
 import Language.Haskell.TH.Syntax           (qLocation)
-import Network.Wai.Handler.WarpTLS
 import Network.Wai (Middleware)
 import Network.Wai.Handler.Warp             (Settings, defaultSettings,
                                              defaultShouldDisplayException,
@@ -143,16 +142,22 @@ develMain = develMainHelper getApplicationDev
 -- | The @main@ function for an executable running this site.
 appMain :: IO ()
 appMain = do
-    let cp s = "/etc/letsencrypt/live/becoachonline.com/" ++ s
+    -- Get the settings from all relevant sources
     settings <- loadYamlSettingsArgs
+        -- fall back to compile-time values, set to [] to require values at runtime
         [configSettingsYmlValue]
+
+        -- allow environment variables to override
         useEnv
+
+    -- Generate the foundation from the settings
     foundation <- makeFoundation settings
+
+    -- Generate a WAI Application from the foundation
     app <- makeApplication foundation
-    runTLS
-        (tlsSettingsChain (cp "cert.pem") [cp "chain.pem"] (cp "privkey.pem"))
-        (setPort 443 settings)
-        app
+
+    -- Run the application with Warp
+    runSettings (warpSettings foundation) app
 
 
 --------------------------------------------------------------
