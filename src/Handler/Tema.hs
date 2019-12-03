@@ -16,7 +16,7 @@ import Database.Persist.Postgresql
 formTema :: Form Tema 
 formTema = renderBootstrap $ Tema
     <$> areq textField "Nome: " Nothing
-    <*> areq dayField  "Dia: " Nothing
+    <*> areq intField  "Dia: " Nothing
     <*> areq textField "Descrição: " Nothing
 
 getTemaR :: Handler Html
