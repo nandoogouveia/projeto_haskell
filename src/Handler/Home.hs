@@ -45,8 +45,8 @@ getHomeR = do
               <a href=@{AdminR}>
                         ADMINISTRADOR
            <li>
-              <a href=@{UsuarioR}>
-                        USUARIO
+              <a href=@{EntrarR}>
+                        LOGIN DE USUARIO
                         
     
         
