@@ -143,18 +143,11 @@ develMain = develMainHelper getApplicationDev
 -- | The @main@ function for an executable running this site.
 appMain :: IO ()
 appMain = do
-    -- Get the settings from all relevant sources
-    settings <- loadYamlSettingsArgs
-        -- fall back to compile-time values, set to [] to require values at runtime
+    let cp s = "/etc/letsencrypt/live/becoachonline.com/" ++ s
+    settings <- loadYamlSettings
         [configSettingsYmlValue]
-
-        -- allow environment variables to override
         useEnv
-
-    -- Generate the foundation from the settings
     foundation <- makeFoundation settings
-
-    -- Generate a WAI Application from the foundation
     app <- makeApplication foundation
 
     -- Run the application with Warp
