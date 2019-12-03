@@ -47,6 +47,9 @@ getHomeR = do
            <li>
               <a href=@{EntrarR}>
                         LOGIN DE USUARIO
+            <li>
+              <a href=@{SairR}>
+                        SAIR DA SESSAO
                         
     
         
