@@ -28,7 +28,6 @@ getHomeR = do
         -- pasta css, arquivo: bootstrap.css
         addStylesheet (StaticR css_bootstrap_css)
         
-        |]
          [whamlet|  
             <ul>
                 <li>
