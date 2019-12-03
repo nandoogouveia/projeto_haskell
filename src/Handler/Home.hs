@@ -35,6 +35,27 @@ getHomeR = do
         |]
         [whamlet|
         
+        
+        <ul>
+                <li>
+                    <a href=@{CoachR}>
+                        COACH
+                
+                <li>
+                    <a href=@{PalestraR}>
+                        PALESTRA
+                
+                <li>
+                    <a href=@{TemaR}>
+                        TEMA
+                
+                $maybe nome <- sess
+                    <li>
+                        Ola #{nome}
+                    <form method=post action=@{SairR}>
+                        <input type="submit" value="Sair">
+                $nothing
+        
         <div id="48248-6">
         <script src="//ads.themoneytizer.com/s/gen.js?type=6">
         <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
@@ -49,9 +70,3 @@ getHomeR = do
         <div id="48248-2">
         <script src="//ads.themoneytizer.com/s/gen.js?type=2">
         <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=2">
-        
-        
-        
-            <h1>
-                IAEw!
-        |]    
