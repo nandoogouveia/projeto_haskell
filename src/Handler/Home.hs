@@ -39,7 +39,7 @@ getHomeR = do
         <div id="48248-6">
         <script src="//ads.themoneytizer.com/s/gen.js?type=6">
         <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
-        
+        <body>
         <ul>
            <li>
               <a href=@{CoachR}>
