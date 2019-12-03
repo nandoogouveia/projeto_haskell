@@ -42,15 +42,6 @@ getHomeR = do
         <body>
         <ul>
            <li>
-              <a href=@{CoachR}>
-                        COACH
-           <li> 
-              <a href=@{PalestraR}>
-                        PALESTRA
-           <li>
-              <a href=@{TemaR}>
-                        TEMA
-           <li>
               <a href=@{AdminR}>
                         ADMINISTRADOR
            <li>
