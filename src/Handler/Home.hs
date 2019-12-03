@@ -42,8 +42,8 @@ getHomeR = do
               <a href=@{PalestraR}>
                         PALESTRA
            <li>
-              <a href=@{ElencoR}>
-                        COACHES
+              <a href=@{TemaR}>
+                        TEMA
                             
                         
         <div id="48248-6">
