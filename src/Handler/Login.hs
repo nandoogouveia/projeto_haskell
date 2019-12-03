@@ -93,6 +93,10 @@ getAdminR = do
            <li>
               <a href=@{UsuarioR}>
                         USUARIO
+           <li>
+              <a href=@{SairR}>
+                        SAIR DA SESSAO
+        
 
     |]
     
