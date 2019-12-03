@@ -28,29 +28,30 @@ getHomeR = do
         -- pasta css, arquivo: bootstrap.css
         addStylesheet (StaticR css_bootstrap_css)
         
-         [whamlet|  
-            <ul>
-                <li>
-                    <a href=@{CoachR}>
-                        COACH
-                
-                <li>
-                    <a href=@{TemaR}>
-                        TEMA
-                
-                <li>
-                    <a href=@{PalestraR}>
-                        PALESTRA
-                
-                $maybe nome <- sess
-                    <li>
-                        Ola #{nome}
-                    <form method=post action=@{SairR}>
-                        <input type="submit" value="Sair">
-                $nothing
-                    <li>
-                        Convidado!
-            
-            <button class="btn btn-danger" onclick="ola()">
-                OLA
+        toWidgetHead [julius|
+            function ola(){
+                alert("ola");
+            }
         |]
+        [whamlet|
+        
+        <div id="48248-6">
+        <script src="//ads.themoneytizer.com/s/gen.js?type=6">
+        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
+        
+        
+        
+        <div style="text-align:center;" id="48248-31">
+        <script src="//ads.themoneytizer.com/s/gen.js?type=31">
+        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=31">
+        
+        
+        <div id="48248-2">
+        <script src="//ads.themoneytizer.com/s/gen.js?type=2">
+        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=2">
+        
+        
+        
+            <h1>
+                IAEw!
+        |]    
