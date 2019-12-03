@@ -27,7 +27,6 @@ formPalestra :: Form Palestra
 formPalestra = renderBootstrap $ Palestra
     <$> areq (selectField temaCB) "Tema: " Nothing
     <*> areq (selectField coachCB) "Coach: " Nothing
-    --<*> areq intField "Dia da Palestra: " Nothing
 
 getPalestraR :: Handler Html
 getPalestraR = do 
