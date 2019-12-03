@@ -33,21 +33,19 @@ getHomeR = do
                 alert("ola");
             }
         |]
-        [whamlet|
-        
-        
-        <ul>
+         [whamlet|    
+            <ul>
                 <li>
                     <a href=@{CoachR}>
                         COACH
                 
                 <li>
-                    <a href=@{PalestraR}>
-                        PALESTRA
-                
-                <li>
                     <a href=@{TemaR}>
                         TEMA
+                
+                <li>
+                    <a href=@{PalestraR}>
+                        PALESTRA
                 
                 $maybe nome <- sess
                     <li>
@@ -55,6 +53,13 @@ getHomeR = do
                     <form method=post action=@{SairR}>
                         <input type="submit" value="Sair">
                 $nothing
+                    <li>
+                        Convidado!
+            
+            <button class="btn btn-danger" onclick="ola()">
+                OLA
+        |]
+
         
         <div id="48248-6">
         <script src="//ads.themoneytizer.com/s/gen.js?type=6">
