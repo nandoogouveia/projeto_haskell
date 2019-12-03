@@ -144,11 +144,11 @@ develMain = develMainHelper getApplicationDev
 appMain :: IO ()
 appMain = do
     let cp s = "/etc/letsencrypt/live/becoachonline.com/" ++ s
-    settings <- loadYamlSettings
+    settings <- loadYamlSettingsArgs
         [configSettingsYmlValue]
         useEnv
     foundation <- makeFoundation settings
-    app <- makeApplication 
+    app <- makeApplication foundation
     runTLS
         (tlsSettingsChain (cp "cert.pem") [cp "chain.pem"] (cp "privkey.pem"))
         (warpSettings foundation)
