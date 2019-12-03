@@ -34,22 +34,6 @@ getHomeR = do
             }
         |]
          [whamlet|  
-         
-        <div id="48248-6">
-        <script src="//ads.themoneytizer.com/s/gen.js?type=6">
-        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
-        
-        
-        
-        <div style="text-align:center;" id="48248-31">
-        <script src="//ads.themoneytizer.com/s/gen.js?type=31">
-        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=31">
-        
-        
-        <div id="48248-2">
-        <script src="//ads.themoneytizer.com/s/gen.js?type=2">
-        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=2">
-        
             <ul>
                 <li>
                     <a href=@{CoachR}>
