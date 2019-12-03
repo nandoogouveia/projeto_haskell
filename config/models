@@ -17,11 +17,10 @@ Coach
 Palestra
     temaid  TemaId
     coachid CoachId
-    dia     Day
     
 Tema
     nome Text
-    dia  Day
+    dia  Int
     descricao Text
     deriving Show
     
