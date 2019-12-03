@@ -53,7 +53,11 @@ getHomeR = do
            <li>
               <a href=@{AdminR}>
                         ADMINISTRADOR
+           <li>
+              <a href=@{UsuarioR}>
+                        USUARIO
                         
+    
         
         
         <body>
