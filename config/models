@@ -17,6 +17,7 @@ Coach
 Palestra
     temaid  TemaId
     coachid CoachId
+    dia     Int
     
 Tema
     nome Text
