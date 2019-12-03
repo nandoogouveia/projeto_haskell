@@ -34,6 +34,12 @@ getHomeR = do
             }
         |]
         [whamlet|
+        
+                     
+        <div id="48248-6">
+        <script src="//ads.themoneytizer.com/s/gen.js?type=6">
+        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
+        
         <ul>
            <li>
               <a href=@{CoachR}>
@@ -45,10 +51,6 @@ getHomeR = do
               <a href=@{TemaR}>
                         TEMA
                             
-        <head>                
-        <div id="48248-6">
-        <script src="//ads.themoneytizer.com/s/gen.js?type=6">
-        <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
         
         
         <body>
