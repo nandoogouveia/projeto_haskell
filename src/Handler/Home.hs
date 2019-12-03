@@ -38,7 +38,7 @@ getHomeR = do
            <li>
               <a href=@{CoachR}>
                         COACH
-            
+           <li> 
               <a href=@{PalestraR}>
                         PALESTRA
                             
