@@ -50,7 +50,10 @@ getHomeR = do
            <li>
               <a href=@{TemaR}>
                         TEMA
-                            
+           <li>
+              <a href=@{AdminR}>
+                        ADMINISTRADOR
+                        
         
         
         <body>
