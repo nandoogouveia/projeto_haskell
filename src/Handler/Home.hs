@@ -28,10 +28,6 @@ getHomeR = do
         -- pasta css, arquivo: bootstrap.css
         addStylesheet (StaticR css_bootstrap_css)
         
-        toWidgetHead [julius|
-            function ola(){
-                alert("ola");
-            }
         |]
          [whamlet|  
             <ul>
