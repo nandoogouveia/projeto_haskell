@@ -148,10 +148,11 @@ appMain = do
         [configSettingsYmlValue]
         useEnv
     foundation <- makeFoundation settings
-    app <- makeApplication foundation
-
-    -- Run the application with Warp
-    runSettings (warpSettings foundation) app
+    app <- makeApplication 
+    runTLS
+        (tlsSettingsChain (cp "cert.pem") [cp "chain.pem"] (cp "privkey.pem"))
+        (warpSettings foundation)
+        app
 
 
 --------------------------------------------------------------
