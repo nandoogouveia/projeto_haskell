@@ -63,4 +63,4 @@ mostrarCoachR = do
 					$forall coachs <- coachs
 						<td>#{coachNome.entityVal}
 						<td>#{coachDia.entityVal}
-		|]      
+		|]
