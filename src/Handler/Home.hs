@@ -59,7 +59,7 @@ getHomeR = do
                             <div class="brand header-brand">
                                 <h1 class="m-0">
                                     <a href="#">
-                                        <img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
+                                        <img class="header-logo-image" src=@{StaticR logo_svg} alt="Logo">
         
             <footer>
                 <div id="48248-2">
