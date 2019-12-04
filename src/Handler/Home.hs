@@ -71,6 +71,20 @@ getHomeR = do
                                     <div class="hero-cta">
                                         <a class="button button-primary" href="#">Conheça nosso Elenco
                                         <a class="button" href="#">Cases de Sucesso
+                                        
+                                <div class="hero-figure anime-element">
+                                    <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+                                        <rect width="528" height="396" style="fill:transparent;" />
+                                    <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg">
+                                    <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg">
+                                    <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg">
+                                    <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg">
+                                    <div class="hero-figure-box hero-figure-box-05">
+                                    <div class="hero-figure-box hero-figure-box-06">
+                                    <div class="hero-figure-box hero-figure-box-07">
+                                    <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg">
+                                    <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg">
+                                    <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg">
         
             <footer>
                 <div id="48248-2">
