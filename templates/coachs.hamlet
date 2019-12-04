@@ -12,7 +12,7 @@
                 <td id=#{"nome" ++ show (fromSqlKey aid)}>
                     #{coachNome coach}
                 <td>
-                    #{show $ coachDtNasc coach}
+                    #{show $ coachDia coach}
                 <td>
                     <form method=post action=@{ApagarCoachR aid}>
                         <button>
