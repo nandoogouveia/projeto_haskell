@@ -5,7 +5,7 @@
             <th>
                 NOME
             <th>
-                DATA NASC
+                DATA NASCIMENTO
             <th>
     <tbody>
         $forall Entity aid coach <- coachs 

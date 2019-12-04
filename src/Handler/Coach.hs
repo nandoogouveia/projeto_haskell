@@ -56,8 +56,8 @@ getMostraCoachR = do
     defaultLayout $ do 
         $(whamletFile "templates/coachs.hamlet")
 
-postApagarCoachR :: CoachNome -> Handler Html 
-postApagarCoachR anome = do 
-    _ <- runDB $ get404 anome
-    runDB $ delete anome 
+postApagarCoachR :: CoachId -> Handler Html 
+postApagarCoachR aid = do 
+    _ <- runDB $ get404 aid
+    runDB $ delete aid 
     redirect MostraCoachR
