@@ -111,10 +111,21 @@ getHomeR = do
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src="dist/images/feature-icon-04.svg" alt="Feature 04">
-                                    <h4 class="feature-title mt-24">Soft Skills
-                                    <p class="text-sm mb-0">Descubra que você não precisa saber absolutamente nada para se dar bem, esqueça as Hard Skills, o futuro é você dominar as Soft Skills.
-                                    
+                                                <img src=@{StaticR img_featureIcon04_svg} alt="Feature 04">
+                                                <h4 class="feature-title mt-24">Soft Skills
+                                                <p class="text-sm mb-0">Descubra que você não precisa saber absolutamente nada para se dar bem, esqueça as Hard Skills, o futuro é você dominar as Soft Skills.
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src=@{StaticR img_featureIcon05_svg} alt="Feature 05">
+                                                <h4 class="feature-title mt-24">Seja Ardil
+                                                <p class="text-sm mb-0">Aprenda as mais variadas técnicas de manipulação do vernáculo para que qualquer obstáculo moral, seja apenas um mero óbice insignificante.
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src=@{StaticR img_featureIcon06_svg} alt="Feature 06">
+                                                <h4 class="feature-title mt-24">Machine Learning
+                                                <p class="text-sm mb-0">A Tecnologia é incrível, tenha acesso em primeira mão das tendências de mercado para que você possa sempre ser o pioneiro no que o seu market niche demandar. aprenda agora sobre machine learning
 
         
             <footer>
