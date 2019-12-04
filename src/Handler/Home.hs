@@ -162,4 +162,16 @@ getHomeR = do
                 <div id="48248-2">
                     <script src="//ads.themoneytizer.com/s/gen.js?type=2">
                     <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=2">
+                <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="#">
+                            <img class="header-logo-image" src="img_logo_svg" alt="Logo">
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#">Contato
+                        <li>
+                            <a href="#">Sobre nós
+                        <li>
+                            <a href="#">FAQ's
         |]    
