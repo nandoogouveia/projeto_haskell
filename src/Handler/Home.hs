@@ -94,6 +94,13 @@ getHomeR = do
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon01_svg} alt="Feature 01">
+                                                <h4 class="feature-title mt-24">Mude seu Mindset
+                                                <p class="text-sm mb-0">Aprenda 1001 técnicas revolucionárias para transformar sua visão de mundo. "O que você precisa não é de faculdade ou diploma. Você precisa mudar o seu Mindset." - Murilo Coach
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src=@{StaticR img_featureIcon02_svg} alt="Feature 02">
+
         
             <footer>
                 <div id="48248-2">
