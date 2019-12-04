@@ -49,3 +49,16 @@ postTemaR = do
             |]
             redirect TemaR
         _ -> redirect HomeR
+
+getMostraTemaR :: Handler Html 
+getMostraTemaR = do 
+    -- select * from tema order by tema.nome
+    temas <- runDB $ selectList [] [Asc TemaNome]
+    defaultLayout $ do 
+        $(whamletFile "templates/temas.hamlet")
+
+postApagarTemaR :: TemaId -> Handler Html 
+postApagarTemaR aid = do 
+    _ <- runDB $ get404 aid
+    runDB $ delete aid 
+    redirect MostraTemaR
