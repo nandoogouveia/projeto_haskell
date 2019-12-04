@@ -59,6 +59,6 @@ getMostraTemaR = do
 
 postApagarTemaR :: TemaId -> Handler Html 
 postApagarTemaR aid = do 
-    _ <- runDB $ get404 aid
+    _ <- runDB $ getBy404 aid
     runDB $ delete aid 
     redirect MostraTemaR

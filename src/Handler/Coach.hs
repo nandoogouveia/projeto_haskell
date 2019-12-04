@@ -58,6 +58,6 @@ getMostraCoachR = do
 
 postApagarCoachR :: CoachId -> Handler Html 
 postApagarCoachR aid = do 
-    _ <- runDB $ get404 aid
+    _ <- runDB $ getBy404 aid
     runDB $ delete aid 
     redirect MostraCoachR
