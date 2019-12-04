@@ -63,4 +63,4 @@ mostrarCoachR = do
 					$forall palestra <- palestras
 						<td>#{coachNome.entityVal}
 						<td>#{coachDia.entityVal}			
-        
+|]
