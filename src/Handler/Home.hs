@@ -151,7 +151,12 @@ getHomeR = do
                                                         <span>ChatBot Coach Training Ⓡ incluso.<
                                                     <li>
                                                         <span>Palestas Secretas para Membros.
-                                                                                             
+                    <section class="cta section">
+                        <div class="container">
+                            <div class="cta-inner section-inner">
+                                <h3 class="section-title mt-0">Você tem dúvidas sobre nosso serviço?
+                                <div class="cta-cta">
+                                    <a class="button button-primary button-wide-mobile" href="#">Não seja um Perdedor.                                                                         
         
             <footer>
                 <div id="48248-2">
