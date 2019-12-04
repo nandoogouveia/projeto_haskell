@@ -80,13 +80,13 @@ getAdminR = do
         <ul>
            <li>
               <a href=@{CoachR}>
-                        COACH
+                        CADASTRO DE COACH
            <li> 
               <a href=@{PalestraR}>
-                        PALESTRA
+                        CADASTRO DE PALESTRA
            <li>
               <a href=@{TemaR}>
-                        TEMA
+                        TEMAS
            <li>
               <a href=@{AdminR}>
                         ADMINISTRADOR
@@ -94,8 +94,11 @@ getAdminR = do
               <a href=@{UsuarioR}>
                         USUARIO
            <li>
+              <a href=@{MostraCoachR}>
+                        EXIBIR COACHS CADASTRADOS
+            <li>
               <a href=@{SairR}>
-                        SAIR DA SESSAO
+                        FINALIZAR SESSAO
         
 
     |]
