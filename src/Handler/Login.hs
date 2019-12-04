@@ -92,7 +92,7 @@ getAdminR = do
                         ADMINISTRADOR
            <li>
               <a href=@{UsuarioR}>
-                        USUARIO
+                        CADASTRO USUARIO
            <li>
               <a href=@{MostraCoachR}>
                         EXIBIR COACHS CADASTRADOS
