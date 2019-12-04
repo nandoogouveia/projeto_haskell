@@ -100,6 +100,21 @@ getHomeR = do
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon02_svg} alt="Feature 02">
+                                                <h4 class="feature-title mt-24">Learn English
+                                                <p class="text-sm mb-0">Estudos apontam que 79% dos Brasileiros tendem a depositar mais confiança em alguem ou uma instituição que preza pela dificuldade e pela multinacionalidade de seu negócio
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src=@{StaticR img_featureIcon03_svg} alt="Feature 03">
+                                                <h4 class="feature-title mt-24">Amplie seu MarketShare
+                                                <p class="text-sm mb-0">Conheça que você não precisa ter algo de qualidade para ganhar dinheiro, aumente seu Market Share com nossa incrível metodologia.
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src="dist/images/feature-icon-04.svg" alt="Feature 04">
+                                    <h4 class="feature-title mt-24">Soft Skills
+                                    <p class="text-sm mb-0">Descubra que você não precisa saber absolutamente nada para se dar bem, esqueça as Hard Skills, o futuro é você dominar as Soft Skills.
+                                    
 
         
             <footer>
