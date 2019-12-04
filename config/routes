@@ -18,5 +18,4 @@
 /palestra         PalestraR  GET POST
 /elenco/#TemaId   ElencoR    GET
 
-/mostracoach      MostrarCoachR GET
 
