@@ -151,16 +151,8 @@ getHomeR = do
                                                         <span>ChatBot Coach Training Ⓡ incluso.<
                                                     <li>
                                                         <span>Palestas Secretas para Membros.
-                                            <div class="pricing-table-cta mb-8">
-                                        <a class="button button-primary button-shadow button-block" href="#">Entre na Fila</a>
-                                    </div>
-			        <section class="cta section">
-				        <div class="container">
-					       <div class="cta-inner section-inner">
-						       <h3 class="section-title mt-0">Você tem dúvidas sobre nosso serviço?
-						       <div class="cta-cta">
-					           <a class="button button-primary button-wide-mobile" href="#">Não seja um Perdedor.
-
+                                                                                             
+        
             <footer>
                 <div id="48248-2">
                     <script src="//ads.themoneytizer.com/s/gen.js?type=2">
