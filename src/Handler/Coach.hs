@@ -53,7 +53,7 @@ mostrarCoachR :: Handler Value
 mostrarCoachR = do
     coachs <- runDB $ selectList [] [Asc CoachNome]
     coachsComInnerJoin <- mapM (\(Entity _ (Coach did _ _ _ _ _ _ _ genid clid )) coachs
-	defaultLayout $ do
+	defaultLayout
 		[whamlet|
 			<table>
 				<thead>
