@@ -16,6 +16,6 @@
                 <td>
                     #{show $ coachNome coach}
                 <td>
-                    <form method=post action=@{ApagarCoachR aid}>
+                    <form method=post action=@{ApagarPalestraR aid}>
                         <button>
                             X
