@@ -17,6 +17,6 @@
                 <td>
                     #{usuarioSenha usuario}
                 <td>
-                    <form method=post action=@{ApagarAlunoR aid}>
+                    <form method=post action=@{ApagarUsuarioR aid}>
                         <button>
                             X
