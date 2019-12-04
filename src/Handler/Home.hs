@@ -60,6 +60,17 @@ getHomeR = do
                                 <h1 class="m-0">
                                     <a href="#">
                                         <img class="header-logo-image" src=@{StaticR img_logo_svg} alt="Logo">
+                                        
+                <main>
+                    <section class="hero">
+                        <div class="container">
+                            <div class="hero-inner">
+                                <div class="hero-copy">
+                                    <h1 class="hero-title mt-0">Seja o melhor COACH do país com nosso incrível curso EAD.
+                                    <p class="hero-paragraph">Aprenda com os maiores pandilhas que já habitaram a face da terra.
+                                    <div class="hero-cta">
+                                        <a class="button button-primary" href="#">Conheça nosso Elenco
+                                        <a class="button" href="#">Cases de Sucesso
         
             <footer>
                 <div id="48248-2">
