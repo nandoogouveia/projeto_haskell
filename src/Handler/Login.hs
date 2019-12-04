@@ -86,7 +86,7 @@ getAdminR = do
                         CADASTRO DE PALESTRA
            <li>
               <a href=@{TemaR}>
-                        TEMAS
+                        DEFINICAO DE TEMAS
            <li>
               <a href=@{AdminR}>
                         ADMINISTRADOR
