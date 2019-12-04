@@ -57,7 +57,7 @@ getMostraCoachR = do
         $(whamletFile "templates/coachs.hamlet")
 
 postApagarCoachR :: CoachId -> Handler Html 
-postApagarCoachR aid = do 
-    _ <- runDB $ get404 aid
-    runDB $ delete aid 
+postApagarCoachR anome = do 
+    _ <- runDB $ get404 anome
+    runDB $ delete anome 
     redirect MostraCoachR

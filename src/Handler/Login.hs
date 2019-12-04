@@ -96,6 +96,9 @@ getAdminR = do
            <li>
               <a href=@{MostraCoachR}>
                         EXIBIR COACHS CADASTRADOS
+           <li>
+              <a href=@{MostraTemaR}>
+                        EXIBIR TEMAS CADASTRADOS
             <li>
               <a href=@{SairR}>
                         FINALIZAR SESSAO

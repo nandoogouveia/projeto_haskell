@@ -20,7 +20,7 @@
 
 
 /mostrar  MostraCoachR GET 
-/coach/#CoachId/apagar ApagarCoachR POST
+/coach/#CoachNome/apagar ApagarCoachR POST
 
 /mostrartema  MostraTemaR GET 
 /tema/#TemaId/apagar ApagarTemaR POST
