@@ -53,14 +53,14 @@ mostrarCoachR :: Handler Value
 mostrarCoachR = do
     coachs <- runDB $ selectList [] [Asc CoachNome]
     coachsComInnerJoin <- mapM (\(Entity _ (Coach did _ _ _ _ _ _ _ genid clid )) coachs
-        defaultLayout $ do
-        [whamlet|
+	defaultLayout $ do
+		[whamlet|
 			<table>
 				<thead>
 					<th>Nome
 					<th>Dia
 				<tbody>		
-					$forall coachs <- coachs
+					$forall palestra <- palestras
 						<td>#{coachNome.entityVal}
-						<td>#{coachDia.entityVal}
-        |]
+						<td>#{coachDia.entityVal}			
+		|]
