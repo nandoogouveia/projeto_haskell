@@ -54,13 +54,13 @@ mostrarCoachR = do
     coachs <- runDB $ selectList [] [Asc CoachNome]
     coachsComInnerJoin <- mapM (\(Entity _ (Coach did _ _ _ _ _ _ _ genid clid )) coachs
         defaultLayout $ do
-		[whamlet|
-			<table>
-				<thead>
-					<th>Nome
-					<th>Nascimento
-				<tbody>		
-					$forall coach <- coachs
-						<td>#{coachNome.entityVal}
-						<td>#{coachDia.entityVal}
+		       [whamlet|
+			           <table>
+				              <thead>
+					                 <th>Nome
+					                 <th>Nascimento
+				       <tbody>		
+					                 $forall coach <- coachs
+						             <td>#{coachNome.entityVal}
+						             <td>#{coachDia.entityVal}
 		|]        
