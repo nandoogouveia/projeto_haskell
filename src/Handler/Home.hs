@@ -93,7 +93,7 @@ getHomeR = do
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src=@{StaticR img_feature-icon-01_svg} alt="Feature 01">
+                                                <img src=@{StaticR img_featureIcon01_svg} alt="Feature 01">
         
             <footer>
                 <div id="48248-2">
