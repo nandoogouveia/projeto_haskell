@@ -8,7 +8,7 @@
             <th>
                 SENHA
     <tbody>
-        $forall Entity aid aluno <- alunos 
+        $forall Entity aid usuario <- usuarios 
             <tr>
                 <td id=#{"nome" ++ show (fromSqlKey aid)}>
                     #{usuarioNome usuario}
