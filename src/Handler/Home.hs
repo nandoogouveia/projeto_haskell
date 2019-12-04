@@ -166,7 +166,7 @@ getHomeR = do
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
                         <a href="#">
-                            <img class="header-logo-image" src="img_logo_svg" alt="Logo">
+                            <img class="header-logo-image" src=@{StaticR img_logo_svg} alt="Logo">
                     <ul class="footer-links list-reset">
                         <li>
                             <a href="#">Contato
