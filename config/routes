@@ -24,3 +24,7 @@
 
 /mostrartema  MostraTemaR GET 
 /tema/#TemaId/apagar ApagarTemaR POST
+
+/mostrarusuario MostraUsuarioR GET
+/usuario/#UsuarioId/apagar ApagarUsuarioR POST
+

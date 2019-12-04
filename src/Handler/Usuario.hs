@@ -58,3 +58,16 @@ postUsuarioR = do
                 |]
                 redirect UsuarioR
         _ -> redirect HomeR
+
+getMostraUsuarioR :: Handler Html 
+getMostraUsuarioR = do 
+    -- select * from usuario order by usuario.nome
+    usuarios <- runDB $ selectList [] [Asc UsuarioNome]
+    defaultLayout $ do 
+        $(whamletFile "templates/usuarios.hamlet")
+
+postApagarUsuarioR :: UsuarioId -> Handler Html 
+postApagarUsuarioR aid = do 
+    _ <- runDB $ get404 aid
+    runDB $ delete aid 
+    redirect MostraUsuarioR        

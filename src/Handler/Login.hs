@@ -99,6 +99,9 @@ getAdminR = do
            <li>
               <a href=@{MostraTemaR}>
                         EXIBIR TEMAS CADASTRADOS
+           <li>
+              <a href=@{MostraUsuarioR}>
+                        EXIBIR USUARIOS CADASTRADOS
             <li>
               <a href=@{SairR}>
                         FINALIZAR SESSAO

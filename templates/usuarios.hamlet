@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                NOME
+            <th>
+                EMAIL
+            <th>
+                SENHA
+    <tbody>
+        $forall Entity aid aluno <- alunos 
+            <tr>
+                <td id=#{"nome" ++ show (fromSqlKey aid)}>
+                    #{usuarioNome usuario}
+                <td>
+                    #{usuarioEmail usuario}
+                <td>
+                    #{usuarioSenha usuario}
+                <td>
+                    <form method=post action=@{ApagarAlunoR aid}>
+                        <button>
+                            X
