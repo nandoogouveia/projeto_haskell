@@ -76,17 +76,4 @@ getElencoR temaid = do
                 $forall (Entity _ _, Entity _ _, Entity _ coach) <- coachs
                     <li>
                         #{coachNome coach}
-        |]
-        
-getMostraPalestraR :: Handler Html 
-getMostraPalestraR = do 
-    -- select * from palestra order by palestra.temaid
-    palestras <- runDB $ selectList [] [Asc PalestraTemaid]
-    defaultLayout $ do 
-        $(whamletFile "templates/palestras.hamlet")
-
-postApagarPalestraR :: TemaId -> Handler Html 
-postApagarPalestraR aid = do 
-    _ <- runDB $ get404 aid
-    runDB $ delete aid 
-    redirect MostraPalestraR        
+        |]		
