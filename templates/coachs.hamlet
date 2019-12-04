@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                NOME
+            <th>
+                DATA NASC
+            <th>
+    <tbody>
+        $forall Entity aid coach <- coachs 
+            <tr>
+                <td id=#{"nome" ++ show (fromSqlKey aid)}>
+                    #{coachNome coach}
+                <td>
+                    #{show $ coachDtNasc coach}
+                <td>
+                    <form method=post action=@{ApagarCoachR aid}>
+                        <button>
+                            X

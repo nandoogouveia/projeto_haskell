@@ -19,3 +19,5 @@
 /elenco/#TemaId   ElencoR    GET
 
 
+/mostrar  MostraCoachR GET 
+/coach/#CoachId/apagar ApagarCoachR POST

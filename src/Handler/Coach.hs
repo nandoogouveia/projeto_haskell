@@ -48,3 +48,16 @@ postCoachR = do
             |]
             redirect CoachR
         _ -> redirect HomeR
+
+getMostraCoachR :: Handler Html 
+getMostraCoachR = do 
+    -- select * from coach order by coach.nome
+    coachs <- runDB $ selectList [] [Asc CoachNome]
+    defaultLayout $ do 
+        $(whamletFile "templates/coachs.hamlet")
+
+postApagarCoachR :: CoachId -> Handler Html 
+postApagarCoachR aid = do 
+    _ <- runDB $ get404 aid
+    runDB $ delete aid 
+    redirect MostraCoachR
