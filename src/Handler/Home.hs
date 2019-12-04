@@ -141,6 +141,16 @@ getHomeR = do
                                                     <span class="pricing-table-price-currency h2">R$
                                                     <span class="pricing-table-price-amount h1">637
                                                     <span class="text-xs">/mês
+                                            <div class="pricing-table-features-title text-xs pt-24 pb-24">Aproveite nosso pacote!
+                                                <ul class="pricing-table-features list-reset text-xs">
+                                                    <li>
+                                                        <span>Mais de 450 horas de video aulas.
+                                                    <li>
+                                                        <span>Mestres Renomados no Mercado.
+                                                    <li>
+                                                        <span>ChatBot Coach Training Ⓡ incluso.<
+                                                    <li>
+                                                        <span>Palestas Secretas para Membros.
         
             <footer>
                 <div id="48248-2">
