@@ -14,7 +14,9 @@
                 <td id=#{"temaid" ++ show (fromSqlKey aid)}>
                     #{palestraTemaid palestra}
                 <td>
-                    #{show $ coachNome coach}
+                    #{palestra CoachNome palestra}
+                <td>
+                    #{show $ palestraDia palestra}    
                 <td>
                     <form method=post action=@{ApagarPalestraR aid}>
                         <button>
