@@ -5,16 +5,12 @@
             <th>
                 TEMA
             <th>
-                COACH
-            <th>
                 DIA
     <tbody>
         $forall Entity aid palestra <- palestras 
             <tr>
                 <td id=#{"temaid" ++ show (fromSqlKey aid)}>
                     #{palestraTemaid palestra}
-                <td>
-                    #{palestra CoachNome palestra}
                 <td>
                     #{show $ palestraDia palestra}    
                 <td>
