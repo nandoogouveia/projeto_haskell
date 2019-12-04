@@ -81,7 +81,7 @@ getElencoR temaid = do
 getMostraPalestraR :: Handler Html 
 getMostraPalestraR = do 
     -- select * from palestra order by palestra.temaid
-    palestras <- runDB $ selectList [] [Asc PalestraTemaId]
+    palestras <- runDB $ selectList [] [Asc PalestraTemaid]
     defaultLayout $ do 
         $(whamletFile "templates/palestras.hamlet")
 
