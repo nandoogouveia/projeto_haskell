@@ -17,3 +17,6 @@
 
 /palestra         PalestraR  GET POST
 /elenco/#TemaId   ElencoR    GET
+
+/mostracoach      CoachR GET
+

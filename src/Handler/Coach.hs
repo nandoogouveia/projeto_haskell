@@ -48,3 +48,18 @@ postCoachR = do
             |]
             redirect CoachR
         _ -> redirect HomeR
+        
+mostrarCoachR :: Handler Value
+	coaches <- runDB $ selectList [] [Asc CoachNome]
+	coachesComInnerJoin <- mapM (\(Entity _ (Coach did _ _ _ _ _ _ _ genid clid )) coaches
+	defaultLayout $ do
+		[whamlet|
+			<table>
+				<thead>
+					<th>Nome
+					<th>Nascimento
+				<tbody>		
+					$forall coach <- coaches
+						<td>#{coachNome.entityVal}
+						<td>#{coachDia.entityVal}
+		|]        

@@ -76,4 +76,4 @@ getElencoR temaid = do
                 $forall (Entity _ _, Entity _ _, Entity _ coach) <- coachs
                     <li>
                         #{coachNome coach}
-        |]
+        |]		
