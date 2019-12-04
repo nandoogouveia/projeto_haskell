@@ -86,6 +86,15 @@ getHomeR = do
                                     <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg">
                                     <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg">
         
+                    <section class="features section">
+                        <div class="container">
+                            <div class="features-inner section-inner has-bottom-divider">
+                                <div class="features-wrap">
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src=@{StaticR img_feature-icon-01_svg} alt="Feature 01">
+        
             <footer>
                 <div id="48248-2">
                     <script src="//ads.themoneytizer.com/s/gen.js?type=2">
