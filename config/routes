@@ -21,3 +21,6 @@
 
 /mostrar  MostraCoachR GET 
 /coach/#CoachId/apagar ApagarCoachR POST
+
+/mostrartema  MostraTemaR GET 
+/tema/#TemaId/apagar ApagarTemaR POST

@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        TEMAS RELACIONADOS
+        <tr>
+            <th>
+                NOME
+            <th>
+                DIA
+            <th>
+                DESCRICAO
+            <th>
+    <tbody>
+        $forall Entity aid tema <- temas
+            <tr>
+                <td id=#{"nome" ++ show (fromSqlKey aid)}>
+                    #{temaNome tema}
+                <td>
+                    #{show $ temaDia tema}
+                <td>
+                    #{show $ temaDescricao tema}
+                <td>
+                    <form method=post action=@{ApagarTemaR aid}>
+                        <button>
+                            X
