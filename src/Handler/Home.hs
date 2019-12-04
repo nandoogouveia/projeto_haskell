@@ -126,7 +126,21 @@ getHomeR = do
                                                 <img src=@{StaticR img_featureIcon06_svg} alt="Feature 06">
                                                 <h4 class="feature-title mt-24">Machine Learning
                                                 <p class="text-sm mb-0">A Tecnologia é incrível, tenha acesso em primeira mão das tendências de mercado para que você possa sempre ser o pioneiro no que o seu market niche demandar. aprenda agora sobre machine learning
-
+                    <section class="pricing section">
+                        <div class="container-sm">
+                            <div class="pricing-inner section-inner">
+                                <div class="pricing-header text-center">
+                                    <h2 class="section-title mt-0">Lições para a Vida Toda
+                                    <p class="section-paragraph mb-0">Esqueça tudo o que você ja viu até hoje, tenha acesso ao nosso conteudo e prepare-se para mudar vidas.
+                            <div class="pricing-tables-wrap">
+                                <div class="pricing-table">
+                                    <div class="pricing-table-inner is-revealing">
+                                        <div class="pricing-table-main">
+                                            <div class="pricing-table-header pb-24">
+                                                <div class="pricing-table-price">
+                                                    <span class="pricing-table-price-currency h2">R$
+                                                    <span class="pricing-table-price-amount h1">637
+                                                    <span class="text-xs">/mês
         
             <footer>
                 <div id="48248-2">
