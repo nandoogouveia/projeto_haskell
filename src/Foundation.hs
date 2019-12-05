@@ -32,7 +32,7 @@ instance Yesod App where
     isAuthorized CoachR _ = return Authorized
     isAuthorized TemaR _ = return Authorized
     isAuthorized PalestraR _ = return Authorized
-    isAuthorized (ElencoR _) _ = return Authorized
+    isAuthorized ElencoR _ = return Authorized
     isAuthorized (StaticR _) _ = return Authorized
     isAuthorized AdminR _ = isAdmin
     isAuthorized _ _ = isUsuario
