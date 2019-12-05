@@ -27,12 +27,15 @@ getHomeR = do
         -- eh o nome do seu script.
         -- pasta css, arquivo: bootstrap.css
         addStylesheet (StaticR css_bootstrap_css)
+        addStylesheet (StaticR css_style_css)
         
         toWidgetHead [julius|
             function ola(){
                 alert("ola");
             }
         |]
+        
+        
         [whamlet|
             <div id="48248-6">
               <script src="//ads.themoneytizer.com/s/gen.js?type=6">
