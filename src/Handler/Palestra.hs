@@ -81,18 +81,3 @@ getElencoR temaid = do
                     <li>
                         #{coachNome coach}
         |]		
-        
-getMostraPalestraR :: Handler Html 
-getMostraPalestraR = do 
-    -- select * from palestra order by palestra.dia
-    palestras <- runDB $ selectList [] [Asc PalestraDia]
-    defaultLayout $ do
-        addStylesheet (StaticR css_bootstrap_css)
-        addStylesheet (StaticR css_style_css) 
-        $(whamletFile "templates/palestras.hamlet")
-
-postApagarPalestraR :: PalestraId -> Handler Html 
-postApagarPalestraR aid = do 
-    _ <- runDB $ get404 aid
-    runDB $ delete aid 
-    redirect MostraPalestraR
