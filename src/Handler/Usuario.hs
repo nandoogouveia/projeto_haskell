@@ -25,19 +25,21 @@ getUsuarioR :: Handler Html
 getUsuarioR = do 
     (widget,_) <- generateFormPost formUsu
     msg <- getMessage
-    defaultLayout $ 
-        [whamlet|
-            $maybe mensa <- msg 
-                <div>
-                    ^{mensa}
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        addStylesheet (StaticR css_style_css)
+            [whamlet|
+                $maybe mensa <- msg 
+                    <div>
+                        ^{mensa}
             
-            <h1>
-                CADASTRO DE USUARIO
+                <h1>
+                    CADASTRO DE USUARIO
             
-            <form method=post action=@{UsuarioR}>
-                ^{widget}
-                <input type="submit" value="Cadastrar">
-        |]
+                <form method=post action=@{UsuarioR}>
+                    ^{widget}
+                    <input type="submit" value="Cadastrar">
+            |]
 
 postUsuarioR :: Handler Html
 postUsuarioR = do 
