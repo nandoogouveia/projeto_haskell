@@ -84,8 +84,8 @@ getElencoR temaid = do
         
 getMostraPalestraR :: Handler Html 
 getMostraPalestraR = do 
-    -- select * from palestra order by palestra.id
-    palestras <- runDB $ selectList [] [Asc PalestraId]
+    -- select * from palestra order by palestra.dia
+    palestras <- runDB $ selectList [] [Asc PalestraDia]
     defaultLayout $ do
         addStylesheet (StaticR css_bootstrap_css)
         addStylesheet (StaticR css_style_css) 
