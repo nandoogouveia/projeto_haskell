@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        PALESTRAS RELACIONADAS
+        <tr>
+            <th>
+                NOME DO COACH
+            <th>
+                NOME DO TEMA
+            <th>
+    <tbody>
+        $forall Entity aid palestra <- palestras 
+            <tr>
+                <td id=#{"nome" ++ show (fromSqlKey aid)}>
+                    #{coachNome coach}
+                <td>
+                    id=#{"nome" ++ show (fromSqlKey aid)}>
+                    #{temaNome tema}
+                <td>
+                    <form method=post action=@{ApagarCoachR aid}>
+                        <button>
+                            X

@@ -28,3 +28,5 @@
 /mostrarusuario MostraUsuarioR GET
 /usuario/#UsuarioId/apagar ApagarUsuarioR POST
 
+/mostrarpalestra MostraPalestraR GET
+/palestra/#PalestraId/apagar ApagarPalestraR POST
