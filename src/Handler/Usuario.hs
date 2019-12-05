@@ -65,7 +65,9 @@ getMostraUsuarioR :: Handler Html
 getMostraUsuarioR = do 
     -- select * from usuario order by usuario.nome
     usuarios <- runDB $ selectList [] [Asc UsuarioNome]
-    defaultLayout $ do 
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        addStylesheet (StaticR css_style_css) 
         $(whamletFile "templates/usuarios.hamlet")
 
 postApagarUsuarioR :: UsuarioId -> Handler Html 
