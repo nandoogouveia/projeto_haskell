@@ -28,6 +28,9 @@ getHomeR = do
         -- pasta css, arquivo: bootstrap.css
         addStylesheet (StaticR css_bootstrap_css)
         addStylesheet (StaticR css_style_css)
+        addScriptRemote "https://unpkg.com/animejs@3.0.1/lib/anime.min.js"
+        addScriptRemote "https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+        
         
         toWidgetHead [julius|
             function ola(){
