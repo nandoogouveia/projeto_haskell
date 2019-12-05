@@ -38,22 +38,10 @@ getHomeR = do
             }
         |]
         
-        toWidgetHead [lucius||]
-        
         [whamlet|
             <div id="48248-6">
               <script src="//ads.themoneytizer.com/s/gen.js?type=6">
               <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
-            <ul>
-                <li class="menuzao">
-                    <a href=@{AdminR}>
-                        ADMINISTRADOR
-                <li class="menuzao">
-                    <a href=@{EntrarR}>
-                        LOGIN DE USUARIO
-                <li class="menuzao">
-                    <a href=@{SairR}>
-                        SAIR DA SESSAO
                         
             <div style="text-align:center;" id="48248-31">
                 <script src="//ads.themoneytizer.com/s/gen.js?type=31">
@@ -78,6 +66,7 @@ getHomeR = do
                                     <div class="hero-cta">
                                         <a class="button button-primary" href=@{AdminR}>Administrador Coach
                                         <a class="button" href=@{EntrarR}>Login de usuário
+                                        <a class="button" href=@{SairR}>Sair da sessão
                                         
                                 <div class="hero-figure anime-element">
                                     <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
