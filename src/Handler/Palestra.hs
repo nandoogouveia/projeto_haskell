@@ -75,7 +75,7 @@ getElencoR temaid = do
         addStylesheet (StaticR css_style_css)
         [whamlet|
             <h1>
-                ELENCO DE #{temaNome tema}
+                PALESTRA SOBRE #{temaNome tema}
             <ul>
                 $forall (Entity _ _, Entity _ _, Entity _ coach) <- coachs
                     <li>
