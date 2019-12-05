@@ -26,8 +26,8 @@ getUsuarioR = do
     (widget,_) <- generateFormPost formUsu
     msg <- getMessage
     defaultLayout $ do
-        addStylesheet (StaticR css_bootstrap_css)
-        addStylesheet (StaticR css_style_css)
+        --addStylesheet (StaticR css_bootstrap_css)
+        --addStylesheet (StaticR css_style_css)
         [whamlet|
             $maybe mensa <- msg 
                 <div>
