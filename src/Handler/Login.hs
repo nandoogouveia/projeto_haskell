@@ -76,41 +76,37 @@ getAdminR = do
         addStylesheet (StaticR css_bootstrap_css)
         addStylesheet (StaticR css_style_css)
     
-    [whamlet|
-        <h1>
-            BEM-VINDO MY KING!
-            
-            
-        <ul>
-           <li>
-              <a href=@{CoachR}>
+        [whamlet|
+            <h1>
+                BEM-VINDO MY KING!
+            <ul>
+                <li>
+                    <a href=@{CoachR}>
                         CADASTRO DE COACH
-           <li> 
-              <a href=@{PalestraR}>
+                <li> 
+                    <a href=@{PalestraR}>
                         CADASTRO DE PALESTRA
-           <li>
-              <a href=@{TemaR}>
+                <li>
+                    <a href=@{TemaR}>
                         DEFINICAO DE TEMAS
-           <li>
-              <a href=@{AdminR}>
+                <li>
+                    <a href=@{AdminR}>
                         ADMINISTRADOR
-           <li>
-              <a href=@{UsuarioR}>
+                <li>
+                    <a href=@{UsuarioR}>
                         CADASTRO USUARIO
-           <li>
-              <a href=@{MostraCoachR}>
+                <li>
+                    <a href=@{MostraCoachR}>
                         EXIBIR COACHS CADASTRADOS
-           <li>
-              <a href=@{MostraTemaR}>
+                <li>
+                    <a href=@{MostraTemaR}>
                         EXIBIR TEMAS CADASTRADOS
-           <li>
-              <a href=@{MostraUsuarioR}>
+                <li>
+                    <a href=@{MostraUsuarioR}>
                         EXIBIR USUARIOS CADASTRADOS
-            <li>
-              <a href=@{SairR}>
+                <li>
+                    <a href=@{SairR}>
                         FINALIZAR SESSAO
-        
-
-    |]
+        |]
     
     
