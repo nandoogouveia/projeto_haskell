@@ -70,7 +70,9 @@ getElencoR temaid = do
           \ WHERE tema.id = ?"
     tema <- runDB $ get404 temaid
     coachs <- runDB $ rawSql sql [toPersistValue temaid] :: Handler [(Entity Tema,Entity Palestra,Entity Coach)]
-    defaultLayout $ do 
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        addStylesheet (StaticR css_style_css)
         [whamlet|
             <h1>
                 ELENCO DE #{temaNome tema}

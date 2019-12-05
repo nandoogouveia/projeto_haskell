@@ -56,7 +56,9 @@ getMostraTemaR :: Handler Html
 getMostraTemaR = do 
     -- select * from tema order by tema.nome
     temas <- runDB $ selectList [] [Asc TemaNome]
-    defaultLayout $ do 
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        addStylesheet (StaticR css_style_css)
         $(whamletFile "templates/temas.hamlet")
 
 postApagarTemaR :: TemaId -> Handler Html 

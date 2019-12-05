@@ -55,7 +55,9 @@ getMostraCoachR :: Handler Html
 getMostraCoachR = do 
     -- select * from coach order by coach.nome
     coachs <- runDB $ selectList [] [Asc CoachNome]
-    defaultLayout $ do 
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        addStylesheet (StaticR css_style_css) 
         $(whamletFile "templates/coachs.hamlet")
 
 postApagarCoachR :: CoachId -> Handler Html 
