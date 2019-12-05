@@ -28,18 +28,18 @@ getUsuarioR = do
     defaultLayout $ do
         addStylesheet (StaticR css_bootstrap_css)
         addStylesheet (StaticR css_style_css)
-            [whamlet|
-                $maybe mensa <- msg 
-                    <div>
-                        ^{mensa}
+        [whamlet|
+            $maybe mensa <- msg 
+                <div>
+                    ^{mensa}
             
-                <h1>
-                    CADASTRO DE USUARIO
-            
-                <form method=post action=@{UsuarioR}>
-                    ^{widget}
-                    <input type="submit" value="Cadastrar">
-            |]
+            <h1>
+                CADASTRO DE USUARIO
+        
+            <form method=post action=@{UsuarioR}>
+                ^{widget}
+                <input type="submit" value="Cadastrar">
+        |]
 
 postUsuarioR :: Handler Html
 postUsuarioR = do 
