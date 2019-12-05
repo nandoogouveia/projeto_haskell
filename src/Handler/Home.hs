@@ -100,38 +100,38 @@ getHomeR = do
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon01_svg} alt="Feature 01">
-                                                <h4 class="feature-title mt-24">Mude seu Mindset
-                                                <p class="text-sm mb-0">Aprenda 1001 técnicas revolucionárias para transformar sua visão de mundo. "O que você precisa não é de faculdade ou diploma. Você precisa mudar o seu Mindset." - Murilo Coach
+                                            <h4 class="feature-title mt-24">Mude seu Mindset
+                                            <p class="text-sm mb-0">Aprenda 1001 técnicas revolucionárias para transformar sua visão de mundo. "O que você precisa não é de faculdade ou diploma. Você precisa mudar o seu Mindset." - Murilo Coach
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon02_svg} alt="Feature 02">
-                                                <h4 class="feature-title mt-24">Learn English
-                                                <p class="text-sm mb-0">Estudos apontam que 79% dos Brasileiros tendem a depositar mais confiança em alguem ou uma instituição que preza pela dificuldade e pela multinacionalidade de seu negócio
+                                            <h4 class="feature-title mt-24">Learn English
+                                            <p class="text-sm mb-0">Estudos apontam que 79% dos Brasileiros tendem a depositar mais confiança em alguem ou uma instituição que preza pela dificuldade e pela multinacionalidade de seu negócio
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon03_svg} alt="Feature 03">
-                                                <h4 class="feature-title mt-24">Amplie seu MarketShare
-                                                <p class="text-sm mb-0">Conheça que você não precisa ter algo de qualidade para ganhar dinheiro, aumente seu Market Share com nossa incrível metodologia.
+                                            <h4 class="feature-title mt-24">Amplie seu MarketShare
+                                            <p class="text-sm mb-0">Conheça que você não precisa ter algo de qualidade para ganhar dinheiro, aumente seu Market Share com nossa incrível metodologia.
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon04_svg} alt="Feature 04">
-                                                <h4 class="feature-title mt-24">Soft Skills
-                                                <p class="text-sm mb-0">Descubra que você não precisa saber absolutamente nada para se dar bem, esqueça as Hard Skills, o futuro é você dominar as Soft Skills.
+                                            <h4 class="feature-title mt-24">Soft Skills
+                                            <p class="text-sm mb-0">Descubra que você não precisa saber absolutamente nada para se dar bem, esqueça as Hard Skills, o futuro é você dominar as Soft Skills.
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon05_svg} alt="Feature 05">
-                                                <h4 class="feature-title mt-24">Seja Ardil
-                                                <p class="text-sm mb-0">Aprenda as mais variadas técnicas de manipulação do vernáculo para que qualquer obstáculo moral, seja apenas um mero óbice insignificante.
+                                            <h4 class="feature-title mt-24">Seja Ardil
+                                            <p class="text-sm mb-0">Aprenda as mais variadas técnicas de manipulação do vernáculo para que qualquer obstáculo moral, seja apenas um mero óbice insignificante.
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
                                                 <img src=@{StaticR img_featureIcon06_svg} alt="Feature 06">
-                                                <h4 class="feature-title mt-24">Machine Learning
-                                                <p class="text-sm mb-0">A Tecnologia é incrível, tenha acesso em primeira mão das tendências de mercado para que você possa sempre ser o pioneiro no que o seu market niche demandar. aprenda agora sobre machine learning
+                                            <h4 class="feature-title mt-24">Machine Learning
+                                            <p class="text-sm mb-0">A Tecnologia é incrível, tenha acesso em primeira mão das tendências de mercado para que você possa sempre ser o pioneiro no que o seu market niche demandar. aprenda agora sobre machine learning
                     <section class="pricing section">
                         <div class="container-sm">
                             <div class="pricing-inner section-inner">
