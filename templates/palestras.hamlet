@@ -11,10 +11,10 @@
         $forall Entity aid palestra <- palestras 
             <tr>
                 <td id=#{"nome" ++ show (fromSqlKey aid)}>
-                    #{coachNome coach}
+                    #{coachid coach}
                 <td>
                     id=#{"nome" ++ show (fromSqlKey aid)}>
-                    #{temaNome tema}
+                    #{temaid tema}
                 <td>
                     <form method=post action=@{ApagarCoachR aid}>
                         <button>
