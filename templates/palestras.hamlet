@@ -14,7 +14,7 @@
                     #{coachNome coach}
                 <td>
                     id=#{"nome" ++ show (fromSqlKey aid)}>
-                    #{temaNome tema}
+                    #{temaId tema}
                 <td>
                     <form method=post action=@{ApagarTemaR aid}>
                         <button>
