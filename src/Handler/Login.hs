@@ -72,10 +72,9 @@ postSairR = do
 
 getAdminR :: Handler Html
 getAdminR = do 
-    defaultLayout [whamlet|
     addStylesheet (StaticR css_bootstrap_css)
     addStylesheet (StaticR css_style_css)
-    
+    defaultLayout [whamlet|
         <h1>
             BEM-VINDO MY KING!
             
