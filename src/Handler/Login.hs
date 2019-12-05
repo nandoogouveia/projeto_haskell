@@ -81,31 +81,31 @@ getAdminR = do
                 BEM-VINDO MY KING!
             <ul>
                 <li>
-                    <a href=@{CoachR}>
+                    <a class="button" href=@{CoachR}>
                         CADASTRO DE COACH
                 <li> 
-                    <a href=@{PalestraR}>
+                    <a class="button" href=@{PalestraR}>
                         CADASTRO DE PALESTRA
                 <li>
-                    <a href=@{TemaR}>
+                    <a class="button" href=@{TemaR}>
                         DEFINICAO DE TEMAS
                 <li>
-                    <a href=@{AdminR}>
+                    <a class="button" href=@{AdminR}>
                         ADMINISTRADOR
                 <li>
-                    <a href=@{UsuarioR}>
+                    <a class="button" href=@{UsuarioR}>
                         CADASTRO USUARIO
                 <li>
-                    <a href=@{MostraCoachR}>
+                    <a class="button" href=@{MostraCoachR}>
                         EXIBIR COACHS CADASTRADOS
                 <li>
-                    <a href=@{MostraTemaR}>
+                    <a class="button" href=@{MostraTemaR}>
                         EXIBIR TEMAS CADASTRADOS
                 <li>
-                    <a href=@{MostraUsuarioR}>
+                    <a class="button" href=@{MostraUsuarioR}>
                         EXIBIR USUARIOS CADASTRADOS
                 <li>
-                    <a href=@{SairR}>
+                    <a class="button" href=@{SairR}>
                         FINALIZAR SESSAO
         |]
     
