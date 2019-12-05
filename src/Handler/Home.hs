@@ -154,7 +154,7 @@ getHomeR = do
                                 <div class="cta-cta">
                                     <a class="button button-primary button-wide-mobile" href="#">Não seja um Perdedor.                                                                         
         
-            <footer>
+            <footer class="site-footer>
                 <div id="48248-2">
                     <script src="//ads.themoneytizer.com/s/gen.js?type=2">
                     <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=2">
