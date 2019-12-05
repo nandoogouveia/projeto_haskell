@@ -38,19 +38,20 @@ getHomeR = do
             }
         |]
         
+        toWidgetHead [lucius||]
         
         [whamlet|
             <div id="48248-6">
               <script src="//ads.themoneytizer.com/s/gen.js?type=6">
               <script src="//ads.themoneytizer.com/s/requestform.js?siteId=48248&formatId=6">
             <ul>
-                <li>
+                <li class="menuzao">
                     <a href=@{AdminR}>
                         ADMINISTRADOR
-                <li>
+                <li class="menuzao">
                     <a href=@{EntrarR}>
                         LOGIN DE USUARIO
-                <li>
+                <li class="menuzao">
                     <a href=@{SairR}>
                         SAIR DA SESSAO
                         
@@ -75,8 +76,8 @@ getHomeR = do
                                     <h1 class="hero-title mt-0">Seja o melhor COACH do país com nosso incrível curso EAD.
                                     <p class="hero-paragraph">Aprenda com os maiores pandilhas que já habitaram a face da terra.
                                     <div class="hero-cta">
-                                        <a class="button button-primary" href="#">Conheça nosso Elenco
-                                        <a class="button" href="#">Cases de Sucesso
+                                        <a class="button button-primary" href=@{AdminR}>Administrador Coach
+                                        <a class="button" href=@{EntrarR}>Login de usuário
                                         
                                 <div class="hero-figure anime-element">
                                     <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
